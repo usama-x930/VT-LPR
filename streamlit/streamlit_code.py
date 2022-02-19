@@ -15,10 +15,6 @@ import pandas as pd
 import time
 import pandas as pd
 from PIL import  ImageDraw, ImageFont
-
- # image = Image.open('aa.png')
-# st.image(image,width = 900,height=900)
-# # use_column_width=True
 import base64
 main_bg = "a5.png"
 main_bg_ext = "jpg"
@@ -43,8 +39,8 @@ st.markdown(
 
 confThreshold = 0.5  #Confidence threshold
 nmsThreshold = 0.4  #Non-maximum suppression threshold
-inpWidth = 416  #608     #Width of network's input image
-inpHeight = 416 #608     #Height of network's input image
+inpWidth = 416      #Width of network's input image
+inpHeight = 416     #Height of network's input image
 
 Title_html = """
     <style>
@@ -93,7 +89,7 @@ def getOutputsNames(net):
 
 #=======================================================================
 
-#=====================  DEFINING NETWORK  ============================
+#=====================  READING NETWORK  ============================
 def network (modelConfiguration, modelWeights):
     net = cv2.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
     net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
@@ -130,9 +126,6 @@ def drawPred(classId, conf, left, top, right, bottom, frame,classes):
 def postprocess(frame, outs,classes):
     frameHeight = frame.shape[0]
     frameWidth = frame.shape[1]
-    
-    # Scan through all the bounding boxes output from the network and keep only the
-    # ones with high confidence scores. Assign the box's class label as the class with the highest score.
     classIds = []
     confidences = []
     boxes = []
@@ -142,7 +135,7 @@ def postprocess(frame, outs,classes):
             #if detection[4]>0.001:
             scores = detection[5:]
             classId = np.argmax(scores)
-            #if scores[classId]>confThreshold:
+            
             confidence = scores[classId]
             if confidence > confThreshold:
                 center_x = int(detection[0] * frameWidth)
@@ -268,11 +261,6 @@ def load_net():
     print ("------------- LOADING ALL YOLO's -----------------")
     return classes_1,classes_2,classes_3,net_1,net_2,net_3
     
-
-
-
-
-
 
 # is_video = False
 # inputFile = 'original_image/5.jpg'
@@ -463,14 +451,6 @@ def detect_objects(our_image,log_file):
         b=num[num.columns[4]]
         res = a.append(b)
 
-#         print(boxes)
-#         print(char)
-#         print(num)
-#         print(a)
-#         print(b)
-#         print(res)
-        
-
        
 
         # Add a layer on top on a detected object 
@@ -497,14 +477,8 @@ def detect_objects(our_image,log_file):
             image_with_boxes[int(ymin):int(ymax),int(xmin):int(xmax),:] /= 2
   
 
-
-        # font = ImageFont.truetype(fontpath, 32)
         img_pil = Image.fromarray(image_with_boxes.astype(np.uint8))
         
-        # b,g,r,a = 0,255,0,0
-        # draw = ImageDraw.Draw(img_pil)
-        # draw.text((5, 5), lp_num, color = (0,255,0))
-        # img = np.array(img_pil)
         cv2.putText(image_with_boxes, lp_num, (10, 10), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0,0,0), 1,cv2.LINE_AA)        
         # Display the final image
         # st.image(image_with_boxes.astype(np.uint8), width = 300)
@@ -513,10 +487,8 @@ def detect_objects(our_image,log_file):
         st.text("")
         plt.figure(figsize = (15,15))
         plt.imshow(image_with_boxes.astype(np.uint8))
-        # plt.imshow(img)
         col2.pyplot(use_column_width=True)
         cv2.imwrite('sample3.jpg', cv2.cvtColor(image_with_boxes.astype(np.uint8), cv2.COLOR_RGB2BGR))
-        # ,channels='BGR'
         with open(log_file, 'r') as f:
 
             dataf= pd.DataFrame({"Vehicle Type":label1,"LP Number":lp_num,"Inference Time":total_time,"Toll Amount":toll})
@@ -537,5 +509,5 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 image_file = st.file_uploader("Upload Image", type=['jpg','png','jpeg'])
 if image_file is not None:
     our_image = Image.open(image_file) 
-    detect_objects(our_image,"new3.csv")
+    detect_objects(our_image,"prediction_result.csv")
 
