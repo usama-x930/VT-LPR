@@ -2,7 +2,7 @@
 This repository is the implementation of Vehicle and License Plate Recognition with Novel Dataset for Toll Collection (VT-LPR).
 
 ## Introduction
-Tolling efficiency in manual toll collection system is low and time consuming. This requires human efforts and resources.
+Tolling efficiency in manual toll collection system is low and time consuming, which results in delayed traffic and long queue of vehicles. This also requires human effort and resources. 
 
 <p align="center">
   <img src="Figs/rush_2.png" width="350" title="hover text">
