@@ -51,3 +51,6 @@ As we're training separate model for each task, all the vehicle images are annot
 <img src="Figs/label.jpg" title="hover text">
 
 ### Framework
+The proposed framework is aim to automatically collect toll amount by end-to-end image-based vehicle type and license plate recognition. Input to the model is an image and the outputs are recognized vehicle type and license plate character. When an image is fed to the first network called VT-Net, it recognize the vehicle type and crop the detection results. The cropped image is then fed to the secong network called LP-Net, which localize and crop the license plate. Finally, the last model called CR-Net is applied on the cropped license plate image to recognize the characters in the license plate.
+
+<img src="Figs/flow.jpg" title="hover text">
