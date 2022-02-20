@@ -1,5 +1,7 @@
 # Vehicle and License Plate Recognition with Novel Dataset for Toll Collection
-This repository is the implementation of Vehicle and License Plate Recognition with Novel Dataset for Toll Collection (VT-LPR).
+This repository is the implementation of Vehicle and License Plate Recognition with Novel Dataset for Toll Collection (VT-LPR). 
+
+The trained models can be downloaded from ![Alt text](https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=sharing)
 
 ## Introduction
 Tolling efficiency in manual toll collection system is low and time consuming, which results in delayed traffic and long queue of vehicles. This also requires human effort and resources. 
@@ -62,3 +64,5 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 <img src="Figs/lp_res.jpg" width ="320" title="hover text">
   <img src="Figs/lpr_res.jpg" width ="450" title="hover text">
 </p>
+
+### MODEL WEIGHTS
