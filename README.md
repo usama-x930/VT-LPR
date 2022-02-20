@@ -59,6 +59,6 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 ### Results
 <p align="center">
 <img src="Figs/type_res.jpg" width ="400" title="hover text">
-<img src="Figs/lp_res.jpg" width ="300" title="hover text">
+<img src="Figs/lp_res.jpg" width ="320" title="hover text">
   <img src="Figs/lpr_res.jpg" width ="400" title="hover text">
 </p>
