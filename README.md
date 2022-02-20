@@ -69,6 +69,10 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 
 Download and extract trained model weights from Google Drive. 
 
+``` #2x
+https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=sharing
+```
+
 Clone this repository
 
 ``` #2x
