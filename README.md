@@ -43,3 +43,8 @@ Image based vehicle type and license plate recognition include many challenges s
   
 </p>
 
+## Methodology
+We divide the Vehicle type and license plate recognition task into three steps: Vehicle type recognition, License plate localization and License plate character recognition. So we prepared three dataset named: _preprocessed dataset for Vehicle type recognition, lp-detect dataset for license plate location and lp-read dataset for license plate character recognition._
+As we're training separate model for each task, all the vehicle images are annotated accordingly as shown below.
+
+<img src="Figs/label.jpg" title="hover text">
