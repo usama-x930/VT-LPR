@@ -25,4 +25,20 @@ We gather a Novel Vehicle type and License Plate Recognition Dataset called _Div
 
 Note: These packages can be installed through Pip package installer. This code is tested with these versions.
 
+## Challenges
+
+Image based vehicle type and license plate recognition include many challenges such as:
+* Intra-class variations
+* Background clutter
+* Non-uniform position
+* Multiple license plates
+* Non-uniform fonts
+* Partial occlusion
+* Damaged license plates
+* Lack of license plates
+
+<p align="center">
+  <img src="Figs/problems.png" width="350" title="hover text">
+  
+</p>
 
