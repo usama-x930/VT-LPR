@@ -7,7 +7,7 @@ The trained models can be downloaded from [Google Drive](https://drive.google.co
 Tolling efficiency in manual toll collection system is low and time consuming, which results in delayed traffic and long queue of vehicles. This also requires human effort and resources. 
 
 <p align="center">
-  <img src="Figs/rush_2.png" width="350" title="hover text">
+  <img src="Figs/rush_2.png" width="450" title="hover text">
 </p>
 Toll collection process is automated in some countries by installing sensors and Radio Frequency Identification (RFID) based system, but this comes with an additional cost of installing such systems. Utilizing the already installed cameras for survillence purposes, we automate the toll collection process by recognizing vehicle type and license plate from the image taken by the cameras.
 We gather a Novel Vehicle type and License Plate Recognition Dataset called _Diverse Vehicle and License Plates Dataset (DVLPD)_ consisting of 10k images. We present an automated toll collection process which consists of three steps: Vehicle Type Recognition, License Plate Detection and Character Recognition. We train different state-of-the-art object detection models such as YOLO V2, YOLO V3, YOLO V4 and Faster RCNN. For the real-time application, we deploy our models on Raspberry Pi.
@@ -23,6 +23,7 @@ We gather a Novel Vehicle type and License Plate Recognition Dataset called _Div
 * pandas
 * numpy
 * tensorflow
+* tflite
 
 Note: These packages can be installed through Pip package installer. This code is tested with these versions.
 
@@ -55,7 +56,7 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 
 <p align="center">
 <img src="Figs/flow.jpg" width ="400" title="hover text">
-<img src="Figs/chart.jpg" width ="400" title="hover text">
+<img src="Figs/chart.jpg" width ="450" title="hover text">
 </p>
 
 ### Results
@@ -84,4 +85,10 @@ https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=shari
 
 ``` #2x
 streamlit run streamlit_code.py
+```
+5. Run PyQt5 GUI using this command.
+
+
+``` #2x
+python vt_lpr_gui.py
 ```
