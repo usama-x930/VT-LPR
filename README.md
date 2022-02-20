@@ -39,6 +39,7 @@ Image based vehicle type and license plate recognition include many challenges s
 
 <p align="center">
   <img src="Figs/problems.jpg" title="hover text">
+  <img src="Figs/variations.jpg" title="hover text">
   
 </p>
 
