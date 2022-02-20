@@ -38,7 +38,7 @@ Image based vehicle type and license plate recognition include many challenges s
 * Lack of license plates
 
 <p align="center">
-  <img src="Figs/problems.png" width="350" title="hover text">
+  <img src="Figs/problems.jpg" title="hover text">
   
 </p>
 
