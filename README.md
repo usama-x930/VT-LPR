@@ -55,7 +55,7 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 
 <p align="center">
 <img src="Figs/flow.jpg" width ="400" title="hover text">
-<img src="Figs/chart.jpg" width ="450" title="hover text">
+<img src="Figs/chart.jpg" width ="400" title="hover text">
 </p>
 
 ### Results
@@ -65,7 +65,7 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
   <img src="Figs/lpr_res.jpg" width ="450" title="hover text">
 </p>
 
-### Test
+## Test
 
 1. Download and extract trained model weights from [Google Drive](https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=sharing). 
 
