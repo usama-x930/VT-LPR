@@ -67,14 +67,21 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
 
 ### Test
 
-Download and extract trained model weights from Google Drive. 
+1. Download and extract trained model weights from [Google Drive](https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=sharing). 
 
 ``` #2x
 https://drive.google.com/file/d/1nGe7kQaKwKzzrvPYSd41ScuSuj2D33-C/view?usp=sharing
 ```
 
-Clone this repository
+2. Clone this repository
 
 ``` #2x
 !git clone https://github.com/usama-x930/VT-LPR.git
+```
+
+3. Put model weights in the downloaded folder.
+4. Run the Streamlit code file using:
+
+``` #2x
+streamlit run streamlit_code.py
 ```
