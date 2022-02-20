@@ -65,4 +65,9 @@ The proposed framework is aim to automatically collect toll amount by end-to-end
   <img src="Figs/lpr_res.jpg" width ="450" title="hover text">
 </p>
 
-### MODEL WEIGHTS
+### Test
+Download and extract trained model weights from Google Drive. 
+Clone this repository
+``` #2x
+!git clone https://github.com/usama-x930/VT-LPR.git
+```
