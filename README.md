@@ -96,8 +96,8 @@ python vt_lpr_gui.py
 
 ## Single Image
 <p align="center">
-  <img src="results/Truck_0003.jpg" width="150" title="hover text">
+  <img src="results/Truck_0003.jpg" width="300" title="hover text">
   <img src="results/S_0001.jpg" width="150" title="hover text">
 <!--   <img src="results/single2.jpg" width="250" title="hover text"> -->
-  <img src="results/S_0002.jpg" width="200" title="hover text">
+  <img src="results/S_0002.jpg" width="250" title="hover text">
 </p>
